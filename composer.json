@@ -1,0 +1,19 @@
+{
+  "name": "ingowalther/humbug-json-to-html",
+  "description": "Converts https://github.com/humbug/humbug Json-Reports to Html-Reports",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ingo Walther",
+      "email": "ingowalther@iwebspace.net"
+    }
+  ],
+  "require": {
+    "symfony/console": "v3.3.10",
+    "twig/twig": "v2.4.4"
+  },
+  "autoload": {
+    "psr-4": {"IngoWalther\\": "src/IngoWalther"}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "directories": [
+    "src",
+    "vendor"
+  ],
+  "main": "bin/console",
+  "output": "phar/humbugJsonToHtml.phar",
+  "stub": true,
+  "chmod": "0755",
+  "git-version": "package-version"
+}

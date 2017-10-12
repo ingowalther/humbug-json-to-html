@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use IngoWalther\HumbugJsonToHtml\Commands\ConvertCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$appliaction = new Application();
+
+$twigLoader = new Twig_Loader_Filesystem(__DIR__ . '/../src/IngoWalther/HumbugJsonToHtml/Resources/views');
+$twig = new Twig_Environment($twigLoader);
+
+$convertCommand = new ConvertCommand();
+$convertCommand->setTwig($twig);
+
+$appliaction->add($convertCommand);
+$appliaction->setDefaultCommand($convertCommand->getName());
+$appliaction->run();
