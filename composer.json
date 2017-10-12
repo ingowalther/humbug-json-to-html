@@ -15,5 +15,6 @@
   },
   "autoload": {
     "psr-4": {"IngoWalther\\": "src/IngoWalther"}
-  }
+  },
+  "bin": ["bin/console"]
 }
